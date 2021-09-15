@@ -6,7 +6,7 @@ const fs = require('fs');
 const { generateArt } = require("./generate");
 const app = express();
 
-const port = process.env.PORT || 3030;
+const port = process.env.PORT || 3330;
 const baseUrl = '0.0.0.0';
 const directory = './assets/';
 
