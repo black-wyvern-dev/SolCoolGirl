@@ -1,0 +1,4 @@
+target
+.next
+.env.local
+/cert/*.pem

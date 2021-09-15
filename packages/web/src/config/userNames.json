@@ -1,0 +1,38 @@
+{
+  "EDshWM3jBy2YUszMiFLAFLx3WkbtqR9An7JZzvg22R1P": {
+    "name": "Deployer Admin",
+    "image": "https://pbs.twimg.com/profile_images/1393399819213983746/2a8l5muc_400x400.png",
+    "description": "",
+    "background": ""
+  },
+  "CduMjFZLBeg3A9wMP3hQCoU1RQzzCpgSvQNXfCi1GCSB": {
+    "name": "Bartosz Lipinski",
+    "image": "https://pbs.twimg.com/profile_images/1393353972371623938/ZMWvvptg_400x400.jpg",
+    "description": "",
+    "background": ""
+  },
+  "DrbC3kbP57EA1wQqjCdaEMKBUEjESGTZbNY7vrZxP5Tb": {
+    "name": "Jordan Prince",
+    "image": "https://placeimg.com/200/200/4",
+    "description": "",
+    "background": ""
+  },
+  "E5GSUDTQAvJouZkxHFGMA3THVzXWvrs4hRZEag2au3k6": {
+    "name": "James Madison",
+    "image": "https://placeimg.com/200/200/3",
+    "description": "",
+    "background": ""
+  },
+  "zPGQGrKFy5cso1DMppWzH8uRpxnqL4Qpnq6vHGf4qTo": {
+    "name": "Solana",
+    "image": "https://placeimg.com/200/200/1",
+    "description": "Account used by Solana to mint official NFTs.",
+    "background": ""
+  },
+  "6cVmna7d3t6oKJLKT9EciCTTetg4hnw5f1YLUYXGzSn3": {
+    "name": "Solana Server",
+    "image": "https://placeimg.com/200/200/2",
+    "description": "Account used by Solana to mint official NFTs.",
+    "background": ""
+  }
+}
