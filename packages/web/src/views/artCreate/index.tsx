@@ -1093,6 +1093,7 @@ const LaunchStep = (props: {
           animation_url: '',
           creators: creatorStructs,
           attributes: nftAttr,
+          seller_fee_basis_points: 500
         });
         props.setFiles([imageFile, undefined].filter(f => f) as File[]);
         props.confirm();
@@ -1174,7 +1175,7 @@ const WaitingStep = (props: {
         ...files,
         new File([JSON.stringify(metadata)], 'metadata.json'),
       ]).then(async lamports => {
-        const sol = lamports / LAMPORT_MULTIPLIER;
+        const sol = 1 + lamports / LAMPORT_MULTIPLIER;
 
         // TODO: cache this and batch in one call
         const [mintRent, metadataRent] = await rentCall;
@@ -1221,7 +1222,7 @@ const WaitingStep = (props: {
               image={'/img/random.jpg'}
               animationURL={animation_url}
               category={props.attributes.properties?.category}
-              name={props.attributes.name}
+              name={'SolCoolGirl'}
               symbol={props.attributes.symbol}
               small={true}
             />

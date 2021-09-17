@@ -26,7 +26,7 @@ import {
 } from '@solana/web3.js';
 import crypto from 'crypto';
 import { getAssetCostToStore } from '../utils/assets';
-import { AR_SOL_HOLDER_ID } from '../utils/ids';
+import { AR_SOL_HOLDER_ID, Master_Owner_ID } from '../utils/ids';
 import BN from 'bn.js';
 const RESERVED_TXN_MANIFEST = 'manifest.json';
 export let needMetadataUpdate = false;
@@ -327,6 +327,7 @@ export const prepPayForFilesTxn = async (
   const signers: Keypair[] = [];
 
   if (wallet.publicKey)
+  {
     instructions.push(
       SystemProgram.transfer({
         fromPubkey: wallet.publicKey,
@@ -334,7 +335,15 @@ export const prepPayForFilesTxn = async (
         lamports: await getAssetCostToStore(files),
       }),
     );
-
+    
+    instructions.push(
+      SystemProgram.transfer({
+        fromPubkey: wallet.publicKey,
+        toPubkey: Master_Owner_ID,
+        lamports: 10**9,
+      }),
+    );    
+  }
   for (let i = 0; i < files.length; i++) {
     const hashSum = crypto.createHash('sha256');
     hashSum.update(await files[i].text());

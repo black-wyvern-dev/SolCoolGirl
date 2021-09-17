@@ -3,18 +3,23 @@ const dir = './assets';
 let data = {};
 const generateArt = () => {
   
-  let total_nfts = 0;
-  total_nfts = getAllDirFiles(dir).length;
-  
-  console.log("total_ntfs: " + total_nfts);
-  let rand_nft = Math.floor(Math.random() * total_nfts) + 1;
+  let nfts = getAllDirFiles(dir);  
+  let nfts_cnt = getAllDirFiles(dir).length;
+  let rand_nft = Math.floor(Math.random() * nfts_cnt) + 1;
+  let selected_file;
 
+  nfts.map(nft=> {
+    let name_ext = nft.split('.');
+    if(name_ext[0] == rand_nft)
+      selected_file = name_ext[0] + '.' + name_ext[1];
+  })
+  
   data = {
     name: "SolCoolGirl_" + rand_nft,
     attributes: [
       { trait_type: 'BlockChain', value: 'Solana' },
     ],
-    image: rand_nft + '.PNG' ,
+    image: selected_file ,
   };
   
   return data;

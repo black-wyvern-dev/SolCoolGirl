@@ -176,7 +176,7 @@ export const LandingView = () => {
         coming soon</h6>
                   </div>
                   <div>
-                    <div className="stack-item" style={{width: '100%', padding: '0 10px 10px 10px', margin: 'auto'}}>
+                    <div className="stack-item" style={{width: '100%', padding: '10 10px 20px 10px', margin: 'auto'}}>
                       {<img className="item-img" src="/img/logo.gif" />}
                     </div>
                   </div>                          

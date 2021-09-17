@@ -488,7 +488,7 @@ export function Notifications() {
       content={content}
       trigger=""
     >
-      <h1 className="title" onClick={() => {history.push(`/`)}}>LOGO</h1>
+      <h1 className="title" onClick={() => {history.push(`/`)}}>SCG</h1>
     </Popover>
   );
 
