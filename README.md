@@ -1,3 +1,13 @@
+# Project Title
+
+SolCoolGirl NFT webstie on Metaplex protocol of Solana
+
+<p align="center">
+  <a href="https://metaplex.com">
+    <img alt="SolCoolGirl" src="https://github.com/black-wyvern-dev/SolCoolGirl/blob/master/packages/web/public/img/logo.gif" width="450" />
+  </a>
+</p>
+
 ## Setup
 
 Be sure to be running Node v12.16.2 and yarn version 1.22.10.
